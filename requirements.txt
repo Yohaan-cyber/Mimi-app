@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+twilio
+boto3
+groq
+httpx
+python-dotenv
+python-multipart
+pillow
+winocr
+pypdf

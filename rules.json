@@ -1,0 +1,62 @@
+[
+  {
+    "pattern": "send (your |the )?otp|share.*otp|otp.*share",
+    "label": "SCAM",
+    "confidence": 0.95,
+    "reason": "OTP phishing — legitimate services never ask for OTPs over WhatsApp"
+  },
+  {
+    "pattern": "you (have |'ve )?won|congratulations.*prize|lottery.*winner|claim.*reward",
+    "label": "SCAM",
+    "confidence": 0.92,
+    "reason": "Prize or lottery scam pattern"
+  },
+  {
+    "pattern": "kyc.*update|update.*kyc|account.*suspend|block.*account|verify.*account.*immediately",
+    "label": "SCAM",
+    "confidence": 0.90,
+    "reason": "KYC/account suspension urgency — common bank impersonation tactic"
+  },
+  {
+    "pattern": "send \\d+ (rupees|rs|inr|usd)|transfer.*immediately|urgent.*payment|pay.*to avoid",
+    "label": "SCAM",
+    "confidence": 0.88,
+    "reason": "Urgent payment demand pattern"
+  },
+  {
+    "pattern": "download.*\\.apk|install.*app.*link|click.*download.*now",
+    "label": "SCAM",
+    "confidence": 0.93,
+    "reason": "APK download link in message — high risk of malware"
+  },
+  {
+    "pattern": "work from home.*earn|part.?time.*earn|daily.*income.*guaranteed|₹\\d+.*per (day|hour)",
+    "label": "SCAM",
+    "confidence": 0.87,
+    "reason": "Fake job offer with guaranteed income claim"
+  },
+  {
+    "pattern": "crypto.*invest|bitcoin.*profit|double.*money|guaranteed.*return",
+    "label": "SCAM",
+    "confidence": 0.90,
+    "reason": "Crypto investment scam pattern"
+  },
+  {
+    "pattern": "(rbi|sebi|income tax|cbi|police).*notice|legal.*action.*against you|case.*filed",
+    "label": "SCAM",
+    "confidence": 0.91,
+    "reason": "Government authority impersonation and legal threat"
+  },
+  {
+    "pattern": "my (son|daughter|brother|sister|husband|wife).*accident|hospital.*emergency.*send money",
+    "label": "SCAM",
+    "confidence": 0.89,
+    "reason": "Fake family emergency money request"
+  },
+  {
+    "pattern": "registration (fee|charge|amount)|pay.*to (start|activate|receive)|deposit.*first",
+    "label": "SCAM",
+    "confidence": 0.88,
+    "reason": "Advance fee fraud — pay to receive jobs, prizes, or loans"
+  }
+]

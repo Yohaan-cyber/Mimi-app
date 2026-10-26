@@ -1,0 +1,36 @@
+# ==============================================================================
+# Git Ignore - Scam Detector
+# ==============================================================================
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# User state / contacts
+trusted_contacts.json
+!trusted_contacts.example.json
+
+# Binaries & large tooling
+*.exe
+cloudflared
+cloudflared.exe
+ngrok
+ngrok.exe
+
+# Python bytecode & environments
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
